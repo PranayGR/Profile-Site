@@ -1,192 +1,182 @@
 *{
-    margin:auto;
-    font-family: Helvetica, arial;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    scroll-behavior: smooth;
 }
 
-html{
-    scroll-behavior: smooth;
+body{
+    background-image: linear-gradient(-135deg, rgb(45,45,45), rgb(21, 29, 33));
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color:#FEB868;
 }
 
 .clear{
     clear: both;
 }
 
-a{
-    text-decoration: none;
-}
-.page-container{
-    max-width:70%;
-    border-bottom: 1px solid grey;
-}
+/*Logo CSS*/
+ .logo{
+     color:#FEB868;
+     font-size: 40px;
+     display: inline-block;
+     margin-left: 30px;
+ }
 
-.home{
-    height:500px;
-}
+ .firstname{
+     display:inline-block;
+     width:21px;
+     overflow:hidden;
+ }
 
-.navbar{
-    height:10%;
-    background-color:#262A2B;
-}
+ .lastname{
+    display:inline-block;
+    width:21px;
+    overflow:hidden;
+ }
 
-.navbar p{
-    font-size: 32px;
-    font-weight: 600;
-    display: inline-block;
-    padding-top: 8px;
-    color:white;
-}
+ .logo:hover .firstname{
+    width:150px;
+ }
 
-.nav-links{
+ .logo:hover .lastname{
+     width:234px;
+ }
+ /*Logo CSS*/
+
+ /*Head-Links CSS*/
+
+ .head-links{
     float:right;
-    font-size:18px;
-}
+    
+ }
 
-.nav-links li{
+ .head-links li{
     float:left;
-    padding-top:15px;
-    padding-left: 20px;
+    margin-right:50px;
+    font-size:20px;
+    color:white;
+ }
+
+ .head-link:hover{
+     color:white;
+     border-bottom:3px solid #FEB868;
+ }
+
+ /*Head-Links CSS*/
+
+ /*Intro*/
+
+.intro-section{
+    margin-top:40px;
+    margin-bottom: 150px;
 }
 
-.nav-link{
-    color: white;
-}
+ .myImage{
+     float:left;
+     width:40%;
+ }
 
-.homepage{
-    height:90%;
-    background-color:#262A2B;
-}
+ .image-container{
+     max-width:60%;
+     margin: 10px auto;
+ }
 
-.homepage p{
-    position:relative;
-    top:35%;
-    color:rgb(247, 247, 247);
-}
+ .image-container img{
+     border-radius: 50%;
+ }
 
-.name{
-    font-size:50px;
-    font-weight: 700;
-    text-align:center;
-    padding-bottom: 1%;
-}
+ .aboutMe{
+     float:left;
+     width:60%;
+ }
 
-.role{
-    text-align: center;
-    font-size: 28px;
-}
+ .description{
+     margin:150px auto 0 auto;
+     max-width:80%;
+     color:white;
+ }
+
+ .description p{
+     font-size:30px;
+     line-height:10px;
+ }
+
+ .name{
+     color:#FEB868;
+ }
+
+ .description a{
+     color:#DC8572;
+     padding:2px 5px;
+     border:1px solid #DC8572;
+ }
+
+ .description a:hover{
+     color:white; 
+     border:1px solid white;
+ }
+
+ /*Intro*/
+
+
+ 
+ /*About Section CSS*/
 
 .about-section{
-    background-color: #FFE9D0;
+    background-color:#A9CEC2;
+    color:#1C6E7D;
 }
 
-.header{
-    font-size:30px;
-    font-weight: 600;
+.about-section h2{
     text-align:center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    color:#2F4858;
+    text-decoration: underline;
 }
 
-.myImage{
+.introduction{
     float:left;
-    width: 50%;
-    padding: 100px 0;
+    width:70%;
+    margin-block: 50px;
 }
 
-.myImage img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    text-align: center;
-    margin-left: 28%;
+.intro-wrapper{
+    max-width:60%;
+    margin:0 auto;
 }
 
-.description{
+.intro-wrapper p{
+    text-align:center;
+}
+
+.into-wrapper dd{
+    color:#1C6E7D;
+}
+
+.skills{
     float:left;
-    width:50%;
+    width:30%;
+    text-align:center;
+    margin-block: 50px;
 }
 
-.description p{
-    padding: 180px 50px 100px 50px;
-    font-size: 18px;
-}
-
-.contact-section{
-    color:black;
-}
-
-.map{
+.skillImage{
+    width:33.33%;
     float:left;
-    width:49%;
-    padding: 30px 0 30px 30px;
 }
 
-.contact-links{
-    float:left;
-    padding: 30px 0 0 30px;
-}
-
-.contact-links p{
-    font-weight: 600;
-    font-size: 16px;
-    padding-left: 10px;
-    padding-top: 10px;
-    float:left; 
-}
-
-.phone{
-    width:30px;
-    height:30px;
-    float:left;
-    padding-left: 10px;
-}
-
-.mail{
-    width:30px;
-    height:20px;
-    float:left;
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-.facebook{
+.skillImage img{
     width:50px;
     height:50px;
-    padding-top: 10px;
-    float: left;
 }
 
-.instagram{
-    width:45px;
-    height:45px;
-    padding-top: 12px;
-    padding-left: 10px;
-    float: left;
+.skillImage p {
+    font-size:20px;
 }
 
-.github{
-    width:40px;
-    height:40px;
-    padding-top: 12px;
-    padding-left: 15px;
-    float: left;
-}
+ /*About Section CSS*/
 
-.linkedin{
-    width:40px;
-    height:40px;
-    padding-top: 12px;
-    padding-left: 15px;
-    float: left;
-}
-
-footer{
-    background-color: #262A2B;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-}
-
-footer p{
-    padding-block: 10px;
-}
 
