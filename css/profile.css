@@ -47,6 +47,8 @@ a{
  }
  /*Logo CSS*/
 
+
+
  /*Head-Links CSS*/
 
  .head-links{
@@ -68,6 +70,8 @@ a{
 
  /*Head-Links CSS*/
 
+ 
+ 
  /*Intro*/
 
 .intro-section{
@@ -128,19 +132,20 @@ a{
 
 .about-section{
     background-color:#A9CEC2;
-    color:#1C6E7D;
+    color:#000000;
+    padding-block: 50px;
 }
 
 .about-section h2{
     text-align:center;
-    color:#2F4858;
+    color:#635787;
     text-decoration: underline;
 }
 
+/*Introduction*/
 .introduction{
     float:left;
     width:70%;
-    margin-block: 50px;
 }
 
 .intro-wrapper{
@@ -156,11 +161,15 @@ a{
     color:#1C6E7D;
 }
 
+/*Introduction*/
+
+
+
+/*Skills*/
 .skills{
     float:left;
     width:30%;
     text-align:center;
-    margin-block: 50px;
 }
 
 .skillImage{
@@ -174,9 +183,43 @@ a{
 }
 
 .skillImage p {
-    font-size:20px;
+    font-size:18px;
+}
+
+/*Skills*/
+
+.quote{
+    max-width:60%;
+    margin: 100px auto 0 auto;
+    text-align:center;
+    font-size: 30px;
+    line-height:10px;
 }
 
  /*About Section CSS*/
+
+
+
+ /*Contact Section CSS*/
+
+ .contact-section{
+     background-color:#598CAC;
+ }
+
+ .contact-section h1{
+    text-align:center;
+    font-size: 32px;
+ }
+ .contact-section{
+     text-align:center;
+ }
+ 
+ .contact-wrapper{
+     max-width:80%;
+     border: 1px solid white;
+     margin: 0 auto;
+ }
+
+ /*Contact Section CSS*/
 
 
