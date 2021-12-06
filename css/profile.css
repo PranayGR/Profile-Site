@@ -265,3 +265,8 @@ a{
  /*Contact Section CSS*/
 
 
+/*Footer CSS*/
+
+footer a:hover{
+    color:white;
+}
