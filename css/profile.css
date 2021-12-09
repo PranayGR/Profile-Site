@@ -93,7 +93,10 @@ a{
  }
 
  .image-container img{
-     border-radius: 50%;
+     height: 300px;
+     border-radius: 50px;
+     box-shadow: 2px 2px 2px 0 rgba(255, 255, 255, 0.5),
+                -2px -2px 2px 0 rgba(255, 255, 255, 0.5);
  }
 
  .aboutMe{
@@ -102,7 +105,7 @@ a{
  }
 
  .description{
-     margin:150px auto 0 auto;
+     margin:80px auto 0 auto;
      max-width:80%;
      color:white;
  }
