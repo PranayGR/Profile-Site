@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #2c2c2c;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar{
+    padding: 0 !important;
+}
+
+.logo{
+    color: #FEB868 !important;
+    font-size:45px;
+    font-weight: 700;
+    position: relative;
+}
+
+.logo::after{
+    content: "Pranay Rapartiwar";
+    position: absolute;
+    font-size: 16px;
+    vertical-align: baseline;
+    white-space: pre-wrap;
+    color: #fff;
+    transform: translate(5px, 9px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.logo:hover::after{
+    opacity: 1;
+}
+
+.nav-link{
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    color: #fff !important;
+    font-size: 18px;
+    margin-left: 20px;
+    transition: 0.8s ease-in-out, color 0s;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active{
+    background-image: linear-gradient(to right,#FEB868,#FEB868);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 100% 100%;
+    color: transparent !important;
+}
+
+.nav-link.active{
+    font-weight: 500; 
+}
+
+.introSection{
+    margin-top: 80px;
+    padding-block: 50px 100px;
+}
+
+.introImg img{
+    width: min(100%, 250px);
+    border-radius: 60px;
+    box-shadow: -2px -2px 2px 1px rgba(255, 255, 255, 0.3);
+}
+
+.intro p{
+    font-size:28px;
+    line-height:30px;
+    color:white;
+}
+
+.intro p span.name{
+    color: #FEB868;
+}
+
+.intro a{
+    color:#DC8572;
+    padding:8px 5px;
+    border:1px solid #DC8572;
+    width: 110px;
+    transition: 0.3s;
+}
+
+.intro a:hover{
+    background-color: #DC8572;
+    color: #2c2c2c;
+}
+
+.aboutSection h2{
+    color: #DC8573;
+}
+
+.aboutSection .about h2::after,
+.aboutSection .interests h2::after{
+    content: "";
+    display: block;
+    width: calc(100% - 40%);
+    height: 3px;
+    background-color: #DC8572;
+}
+
+.aboutSection .about p{
+    color: #fff;
+    margin-top: 30px;
+    width: calc(100% - 15%);
+}
+
+.aboutSection .interests ul{
+    margin-top: 40px;
+}
+
+.aboutSection .interests li{
+    list-style-type: none;
+    color: #fff;
+}
+
+.aboutSection .interests li dt{
+    margin-left: -30px;
+}
+
+.aboutSection .interests li dd{
+    color: #ccc;
+}
+
+.aboutSection .skillSection{
+    padding-block: 80px;
+}
+
+.aboutSection .skillSection h2{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.aboutSection .skillSection .skills{
+
+}
+
+.aboutSection .skillSection .skills img{
+    width: 90px;
+    margin-top: 50px;
+}
+
+.projectSection h1{
+    color: #DC8572;
+    text-align: center;
+}
+
+.projectSection{
+    margin-block: 100px;
+}
+
+.projectSection .projectCard{
+    width: max(45%,400px);
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.projectSection .projectCard img{
+    width: 100%;
+    height: 100%;
+}
+
+.projectSection .projectCard .projectDescription{
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.projectSection .projectCard:hover .projectDescription{
+    top: 0;
+    opacity: 1;
+}
+
+.projectSection .projectCard .projectDescription h3{
+    text-transform: uppercase;
+    text-align: center;
+    color: #FEB868;
+    font-weight: 700;
+}
+
+.projectSection .projectCard .projectDescription .viewBtn{
+    color: #fff;
+    box-shadow: 0;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.contactSection{
+    margin-bottom: 30px;
+}
+
+.contactSection h1{
+    text-align:center;
+    color: #DC8572;
+}
+
+.contactSection .contactForm{
+    width: min(100%,500px);
+    margin: 50px auto;
+}
+
+.contactSection .contactForm .contactBtn{
+    width: 100px;
+    background-color: #FEB868;
+    
+    margin: 0 auto;
+}
+
+.contactSection .socialSection p{
+    color: #FEB868;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.contactSection .socialSection p > i{
+    color: #fff;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.contactSection .socialSection a > i{
+    font-size: 35px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.contactSection .socialSection a + a{
+    margin-left: 15px;
+}
+
+.contactSection .socialSection a[class="facebook"]:hover > i{
+    color: #166FE5;
+    transform: scale(1.2);
+}
+
+.contactSection .socialSection a[class="instagram"]:hover > i{
+    color: #B337A2;
+    transform: scale(1.2);
+}
+
+.contactSection .socialSection a[class="linkedin"]:hover > i{
+    color: #0A66C2;
+    transform: scale(1.2);
+}
+
+.contactSection .socialSection a[class="github"]:hover > i{
+    transform: scale(1.2);
+}
+
+.contactSection .mapSection iframe{
+    width: min(100%, 600px);
+    height: min(100vw, 450px);
+}
+
+footer{
+    background-color: #212529;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+    text-align: center; 
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 998px){
+    .intro{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .contactSection .socialSection p{
+        font-size: 15px;
+    }
+}
