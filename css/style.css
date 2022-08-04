@@ -149,9 +149,9 @@ header{
     padding-block: 80px;
 }
 
-.aboutSection .skillSection h2{
-    text-transform: uppercase;
-    font-weight: 700;
+.aboutSection .skillSection h1{
+    color: #DC8572;
+    text-align: center;
 }
 
 .aboutSection .skillSection .skills{
